@@ -1,0 +1,17 @@
+# Requirements for Notebook 1: Graph Database Fundamentals with Neo4j
+# This notebook demonstrates graph database concepts using Neo4j Community Edition
+
+# Neo4j Python drivers
+neo4j>=5.14.0
+py2neo>=2021.2.3
+
+# Data manipulation and analysis
+pandas>=2.0.0
+
+# Visualization libraries
+matplotlib>=3.7.0
+networkx>=3.1
+python-louvain>=0.16
+
+# Note: Neo4j Community Edition is installed via apt-get in the notebook
+# !apt-get install -y neo4j
