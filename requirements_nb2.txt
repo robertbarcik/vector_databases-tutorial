@@ -1,0 +1,25 @@
+# Requirements for Notebook 2: GraphRAG with Neo4j and LlamaIndex
+# This notebook demonstrates GraphRAG by combining graph databases with vector search
+
+# Neo4j Python drivers
+neo4j>=5.14.0
+py2neo>=2021.2.3
+
+# OpenAI API for GPT-5-nano
+openai>=1.0.0
+
+# LlamaIndex for RAG orchestration
+llama-index>=0.9.0
+llama-index-graph-stores-neo4j>=0.1.0
+llama-index-vector-stores-chroma>=0.1.0
+llama-index-embeddings-openai>=0.1.0
+
+# Vector database
+chromadb>=0.4.0
+
+# Data manipulation and visualization
+pandas>=2.0.0
+networkx>=3.1
+matplotlib>=3.7.0
+
+# Note: Neo4j Community Edition is installed via apt-get in the notebook
