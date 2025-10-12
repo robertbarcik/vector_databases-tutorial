@@ -1,0 +1,4 @@
+jupyter
+pinecone==7.3.0
+transformers==4.55.0
+pandas==2.3.1

@@ -1,0 +1,7 @@
+jupyter
+chromadb==1.0.16
+openai==1.99.9
+sentence-transformers==5.1.0
+transformers==5.1.0
+accelerate==5.1.0
+bitsandbytes==5.1.0
