@@ -1,7 +1,8 @@
 jupyter
-llama-index==0.13.2
-llama-parse==0.6.54
-openai==1.99.9
-llama-index-llms-openai==0.5.4
-chromadb==1.0.20
-llama-index-vector-stores-chroma==0.5.3
+llama-index-core==0.11.20
+llama-index-embeddings-openai==0.2.5
+llama-index-llms-openai==0.2.14
+llama-parse==0.5.12
+openai==1.54.3
+chromadb==0.5.23
+llama-index-vector-stores-chroma==0.2.0
