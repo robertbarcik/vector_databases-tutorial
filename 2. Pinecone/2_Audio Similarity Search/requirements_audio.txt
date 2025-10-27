@@ -11,3 +11,4 @@ torchaudio>=2.5.1
 soundfile
 pinecone==5.4.2
 panns-inference==0.1.0
+requests
