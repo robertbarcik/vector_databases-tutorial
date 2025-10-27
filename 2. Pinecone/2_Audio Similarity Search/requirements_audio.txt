@@ -2,12 +2,12 @@ jupyter
 ipython
 ipywidgets
 tqdm
-numpy<2.0.0
+numpy>=2.0.0
 pandas>=2.0.0,<3.0.0
 librosa==0.10.2
 datasets==3.2.0
-torch==2.5.1
-torchaudio==2.5.1
+torch>=2.5.1
+torchaudio>=2.5.1
 soundfile
 pinecone==5.4.2
 panns-inference==0.1.0
