@@ -1,10 +1,16 @@
 # ChromaDB Tutorial Requirements
-# Compatible with Google Colab and Python 3.12+
+# CORRECT VERSIONS - Compatible with NumPy 2.0+ and Google Colab
 
 jupyter
-chromadb==0.5.23
-openai==1.54.3
-sentence-transformers==3.3.1
+chromadb==0.5.3
+openai==0.28.1
+sentence-transformers==3.0.1
 
-# Note: numpy, httpx, transformers, and torch are automatically installed
-# as dependencies of the above packages and don't need explicit versions
+# Why these versions:
+# - chromadb 0.5.3: Works with NumPy 2.0+ (Colab's default)
+# - openai 0.28.1: Old API compatible with chromadb (avoids 'proxies' error)
+# - sentence-transformers 3.0.1: Stable version
+#
+# IMPORTANT: Do NOT import "from openai import OpenAI" 
+# The 0.28.1 version doesn't have the OpenAI class
+# Use embedding_functions.OpenAIEmbeddingFunction() instead
