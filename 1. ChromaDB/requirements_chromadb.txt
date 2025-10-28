@@ -1,8 +1,10 @@
+# ChromaDB Tutorial Requirements
+# Compatible with Google Colab and Python 3.12+
+
 jupyter
-numpy==1.26.4
-chromadb==0.4.24
+chromadb==0.5.23
 openai==1.54.3
 sentence-transformers==3.3.1
-httpx==0.27.0
-transformers==4.46.3
-torch==2.5.1
+
+# Note: numpy, httpx, transformers, and torch are automatically installed
+# as dependencies of the above packages and don't need explicit versions
