@@ -1,7 +1,9 @@
-# ChromaDB Requirements
+
 
 
 chromadb==1.3.0
 openai==1.109.1
 sentence-transformers==5.1.2
+transformers==4.57.1
+torch==2.8.0+cu126
 
