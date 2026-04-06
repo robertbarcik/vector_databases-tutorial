@@ -1,9 +1,0 @@
-jupyter
-llama-index-core==0.14.6
-llama-index-embeddings-openai==0.5.1
-llama-index-llms-openai==0.6.6
-llama-parse
-openai==1.109.1
-chromadb==1.2.2
-llama-index-vector-stores-chroma==0.5.3
-llama-index-readers-file
