@@ -1,0 +1,771 @@
+{
+  "employees": [
+    {
+      "id": "emp001",
+      "name": "Sarah Chen",
+      "title": "VP of Data Science",
+      "years_experience": 12,
+      "email": "sarah.chen@company.com"
+    },
+    {
+      "id": "emp002",
+      "name": "Marcus Johnson",
+      "title": "Senior ML Engineer",
+      "years_experience": 7,
+      "email": "marcus.j@company.com"
+    },
+    {
+      "id": "emp003",
+      "name": "Priya Patel",
+      "title": "Data Scientist",
+      "years_experience": 4,
+      "email": "priya.p@company.com"
+    },
+    {
+      "id": "emp004",
+      "name": "James Liu",
+      "title": "ML Engineer",
+      "years_experience": 5,
+      "email": "james.liu@company.com"
+    },
+    {
+      "id": "emp005",
+      "name": "Elena Rodriguez",
+      "title": "Data Analyst",
+      "years_experience": 3,
+      "email": "elena.r@company.com"
+    },
+    {
+      "id": "emp006",
+      "name": "David Kim",
+      "title": "VP of Engineering",
+      "years_experience": 15,
+      "email": "david.kim@company.com"
+    },
+    {
+      "id": "emp007",
+      "name": "Amy Zhang",
+      "title": "Senior Backend Engineer",
+      "years_experience": 8,
+      "email": "amy.zhang@company.com"
+    },
+    {
+      "id": "emp008",
+      "name": "Carlos Santos",
+      "title": "Frontend Engineer",
+      "years_experience": 5,
+      "email": "carlos.s@company.com"
+    },
+    {
+      "id": "emp009",
+      "name": "Lisa Anderson",
+      "title": "DevOps Engineer",
+      "years_experience": 6,
+      "email": "lisa.a@company.com"
+    },
+    {
+      "id": "emp010",
+      "name": "Mohammed Ali",
+      "title": "Backend Engineer",
+      "years_experience": 4,
+      "email": "mohammed.a@company.com"
+    },
+    {
+      "id": "emp011",
+      "name": "Sophie Martin",
+      "title": "Product Manager",
+      "years_experience": 9,
+      "email": "sophie.m@company.com"
+    },
+    {
+      "id": "emp012",
+      "name": "Raj Sharma",
+      "title": "Product Designer",
+      "years_experience": 6,
+      "email": "raj.s@company.com"
+    },
+    {
+      "id": "emp013",
+      "name": "Nina Williams",
+      "title": "UX Researcher",
+      "years_experience": 5,
+      "email": "nina.w@company.com"
+    },
+    {
+      "id": "emp014",
+      "name": "Alex Turner",
+      "title": "CEO",
+      "years_experience": 20,
+      "email": "alex.turner@company.com"
+    },
+    {
+      "id": "emp015",
+      "name": "Jennifer Lee",
+      "title": "CTO",
+      "years_experience": 18,
+      "email": "jennifer.lee@company.com"
+    },
+    {
+      "id": "emp016",
+      "name": "Robert Brown",
+      "title": "Senior Data Scientist",
+      "years_experience": 8,
+      "email": "robert.b@company.com"
+    },
+    {
+      "id": "emp017",
+      "name": "Maria Garcia",
+      "title": "Junior ML Engineer",
+      "years_experience": 2,
+      "email": "maria.g@company.com"
+    },
+    {
+      "id": "emp018",
+      "name": "Tom Wilson",
+      "title": "Data Engineer",
+      "years_experience": 5,
+      "email": "tom.w@company.com"
+    }
+  ],
+  "departments": [
+    {
+      "id": "dept001",
+      "name": "Data Science",
+      "budget": 2500000,
+      "location": "Building A"
+    },
+    {
+      "id": "dept002",
+      "name": "Engineering",
+      "budget": 5000000,
+      "location": "Building B"
+    },
+    {
+      "id": "dept003",
+      "name": "Product",
+      "budget": 1500000,
+      "location": "Building A"
+    },
+    {
+      "id": "dept004",
+      "name": "Executive",
+      "budget": 3000000,
+      "location": "Building C"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj001",
+      "name": "Customer Churn Prediction",
+      "status": "active",
+      "priority": "high",
+      "budget": 500000
+    },
+    {
+      "id": "proj002",
+      "name": "Recommendation Engine v2",
+      "status": "active",
+      "priority": "high",
+      "budget": 750000
+    },
+    {
+      "id": "proj003",
+      "name": "Real-time Analytics Dashboard",
+      "status": "active",
+      "priority": "medium",
+      "budget": 300000
+    },
+    {
+      "id": "proj004",
+      "name": "Mobile App Redesign",
+      "status": "planning",
+      "priority": "medium",
+      "budget": 400000
+    },
+    {
+      "id": "proj005",
+      "name": "Data Pipeline Optimization",
+      "status": "active",
+      "priority": "high",
+      "budget": 350000
+    },
+    {
+      "id": "proj006",
+      "name": "NLP Chatbot",
+      "status": "completed",
+      "priority": "low",
+      "budget": 200000
+    },
+    {
+      "id": "proj007",
+      "name": "Fraud Detection System",
+      "status": "active",
+      "priority": "critical",
+      "budget": 900000
+    },
+    {
+      "id": "proj008",
+      "name": "Infrastructure Migration",
+      "status": "active",
+      "priority": "high",
+      "budget": 600000
+    },
+    {
+      "id": "proj009",
+      "name": "A/B Testing Platform",
+      "status": "planning",
+      "priority": "medium",
+      "budget": 250000
+    },
+    {
+      "id": "proj010",
+      "name": "Computer Vision API",
+      "status": "active",
+      "priority": "medium",
+      "budget": 450000
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "category": "Programming",
+      "level": "essential"
+    },
+    {
+      "name": "TensorFlow",
+      "category": "ML Framework",
+      "level": "advanced"
+    },
+    {
+      "name": "PyTorch",
+      "category": "ML Framework",
+      "level": "advanced"
+    },
+    {
+      "name": "SQL",
+      "category": "Database",
+      "level": "essential"
+    },
+    {
+      "name": "Neo4j",
+      "category": "Database",
+      "level": "specialized"
+    },
+    {
+      "name": "AWS",
+      "category": "Cloud",
+      "level": "essential"
+    },
+    {
+      "name": "Docker",
+      "category": "DevOps",
+      "level": "essential"
+    },
+    {
+      "name": "Kubernetes",
+      "category": "DevOps",
+      "level": "advanced"
+    },
+    {
+      "name": "React",
+      "category": "Frontend",
+      "level": "essential"
+    },
+    {
+      "name": "Node.js",
+      "category": "Backend",
+      "level": "essential"
+    },
+    {
+      "name": "NLP",
+      "category": "AI Specialty",
+      "level": "specialized"
+    },
+    {
+      "name": "Computer Vision",
+      "category": "AI Specialty",
+      "level": "specialized"
+    },
+    {
+      "name": "Scikit-learn",
+      "category": "ML Framework",
+      "level": "essential"
+    },
+    {
+      "name": "Apache Spark",
+      "category": "Big Data",
+      "level": "advanced"
+    },
+    {
+      "name": "Product Strategy",
+      "category": "Business",
+      "level": "specialized"
+    }
+  ],
+  "relationships": {
+    "works_in": [
+      [
+        "emp001",
+        "dept001"
+      ],
+      [
+        "emp002",
+        "dept001"
+      ],
+      [
+        "emp003",
+        "dept001"
+      ],
+      [
+        "emp004",
+        "dept001"
+      ],
+      [
+        "emp005",
+        "dept001"
+      ],
+      [
+        "emp016",
+        "dept001"
+      ],
+      [
+        "emp017",
+        "dept001"
+      ],
+      [
+        "emp018",
+        "dept001"
+      ],
+      [
+        "emp006",
+        "dept002"
+      ],
+      [
+        "emp007",
+        "dept002"
+      ],
+      [
+        "emp008",
+        "dept002"
+      ],
+      [
+        "emp009",
+        "dept002"
+      ],
+      [
+        "emp010",
+        "dept002"
+      ],
+      [
+        "emp011",
+        "dept003"
+      ],
+      [
+        "emp012",
+        "dept003"
+      ],
+      [
+        "emp013",
+        "dept003"
+      ],
+      [
+        "emp014",
+        "dept004"
+      ],
+      [
+        "emp015",
+        "dept004"
+      ]
+    ],
+    "manages": [
+      [
+        "emp014",
+        "emp015"
+      ],
+      [
+        "emp014",
+        "emp001"
+      ],
+      [
+        "emp014",
+        "emp006"
+      ],
+      [
+        "emp015",
+        "emp006"
+      ],
+      [
+        "emp001",
+        "emp002"
+      ],
+      [
+        "emp001",
+        "emp016"
+      ],
+      [
+        "emp002",
+        "emp003"
+      ],
+      [
+        "emp002",
+        "emp004"
+      ],
+      [
+        "emp016",
+        "emp017"
+      ],
+      [
+        "emp001",
+        "emp018"
+      ],
+      [
+        "emp001",
+        "emp005"
+      ],
+      [
+        "emp006",
+        "emp007"
+      ],
+      [
+        "emp007",
+        "emp010"
+      ],
+      [
+        "emp006",
+        "emp008"
+      ],
+      [
+        "emp006",
+        "emp009"
+      ],
+      [
+        "emp011",
+        "emp012"
+      ],
+      [
+        "emp011",
+        "emp013"
+      ]
+    ],
+    "assigned_to": [
+      [
+        "emp001",
+        "proj001"
+      ],
+      [
+        "emp003",
+        "proj001"
+      ],
+      [
+        "emp005",
+        "proj001"
+      ],
+      [
+        "emp002",
+        "proj002"
+      ],
+      [
+        "emp004",
+        "proj002"
+      ],
+      [
+        "emp016",
+        "proj002"
+      ],
+      [
+        "emp018",
+        "proj003"
+      ],
+      [
+        "emp007",
+        "proj003"
+      ],
+      [
+        "emp005",
+        "proj003"
+      ],
+      [
+        "emp008",
+        "proj004"
+      ],
+      [
+        "emp012",
+        "proj004"
+      ],
+      [
+        "emp013",
+        "proj004"
+      ],
+      [
+        "emp018",
+        "proj005"
+      ],
+      [
+        "emp009",
+        "proj005"
+      ],
+      [
+        "emp007",
+        "proj005"
+      ],
+      [
+        "emp004",
+        "proj006"
+      ],
+      [
+        "emp003",
+        "proj006"
+      ],
+      [
+        "emp002",
+        "proj007"
+      ],
+      [
+        "emp016",
+        "proj007"
+      ],
+      [
+        "emp004",
+        "proj007"
+      ],
+      [
+        "emp009",
+        "proj008"
+      ],
+      [
+        "emp007",
+        "proj008"
+      ],
+      [
+        "emp010",
+        "proj008"
+      ],
+      [
+        "emp011",
+        "proj009"
+      ],
+      [
+        "emp012",
+        "proj009"
+      ],
+      [
+        "emp003",
+        "proj010"
+      ],
+      [
+        "emp017",
+        "proj010"
+      ]
+    ],
+    "has_skill": [
+      [
+        "emp001",
+        "Python"
+      ],
+      [
+        "emp001",
+        "TensorFlow"
+      ],
+      [
+        "emp001",
+        "AWS"
+      ],
+      [
+        "emp001",
+        "SQL"
+      ],
+      [
+        "emp002",
+        "Python"
+      ],
+      [
+        "emp002",
+        "TensorFlow"
+      ],
+      [
+        "emp002",
+        "PyTorch"
+      ],
+      [
+        "emp002",
+        "Docker"
+      ],
+      [
+        "emp003",
+        "Python"
+      ],
+      [
+        "emp003",
+        "Scikit-learn"
+      ],
+      [
+        "emp003",
+        "SQL"
+      ],
+      [
+        "emp003",
+        "NLP"
+      ],
+      [
+        "emp004",
+        "Python"
+      ],
+      [
+        "emp004",
+        "PyTorch"
+      ],
+      [
+        "emp004",
+        "Docker"
+      ],
+      [
+        "emp004",
+        "NLP"
+      ],
+      [
+        "emp005",
+        "Python"
+      ],
+      [
+        "emp005",
+        "SQL"
+      ],
+      [
+        "emp005",
+        "Scikit-learn"
+      ],
+      [
+        "emp006",
+        "Python"
+      ],
+      [
+        "emp006",
+        "AWS"
+      ],
+      [
+        "emp006",
+        "Kubernetes"
+      ],
+      [
+        "emp006",
+        "Docker"
+      ],
+      [
+        "emp007",
+        "Python"
+      ],
+      [
+        "emp007",
+        "Node.js"
+      ],
+      [
+        "emp007",
+        "SQL"
+      ],
+      [
+        "emp007",
+        "Docker"
+      ],
+      [
+        "emp007",
+        "AWS"
+      ],
+      [
+        "emp008",
+        "React"
+      ],
+      [
+        "emp008",
+        "Node.js"
+      ],
+      [
+        "emp009",
+        "Docker"
+      ],
+      [
+        "emp009",
+        "Kubernetes"
+      ],
+      [
+        "emp009",
+        "AWS"
+      ],
+      [
+        "emp010",
+        "Python"
+      ],
+      [
+        "emp010",
+        "Node.js"
+      ],
+      [
+        "emp010",
+        "SQL"
+      ],
+      [
+        "emp010",
+        "Docker"
+      ],
+      [
+        "emp011",
+        "Product Strategy"
+      ],
+      [
+        "emp011",
+        "SQL"
+      ],
+      [
+        "emp012",
+        "React"
+      ],
+      [
+        "emp013",
+        "Product Strategy"
+      ],
+      [
+        "emp016",
+        "Python"
+      ],
+      [
+        "emp016",
+        "TensorFlow"
+      ],
+      [
+        "emp016",
+        "Scikit-learn"
+      ],
+      [
+        "emp016",
+        "SQL"
+      ],
+      [
+        "emp017",
+        "Python"
+      ],
+      [
+        "emp017",
+        "TensorFlow"
+      ],
+      [
+        "emp017",
+        "Computer Vision"
+      ],
+      [
+        "emp018",
+        "Python"
+      ],
+      [
+        "emp018",
+        "SQL"
+      ],
+      [
+        "emp018",
+        "Apache Spark"
+      ],
+      [
+        "emp018",
+        "AWS"
+      ]
+    ]
+  }
+}
