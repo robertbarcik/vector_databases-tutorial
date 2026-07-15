@@ -78,3 +78,6 @@ htmlcov/
 *.db
 *.sqlite
 *.sqlite3
+
+# Interné natáčacie podklady (slidy + speaker notes) — len lokálne a na Drive, nikdy na GitHub
+recordings/
