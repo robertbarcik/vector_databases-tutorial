@@ -1,0 +1,68 @@
+# Vector Databases — one requirements file for the whole course (local setup).
+#
+# Google Colab users do NOT need this: every notebook installs what it needs
+# in its first cell. For a local machine, run these once from the course
+# folder (Python 3.10 or newer; tested on 3.12 and 3.14 in September 2026):
+#
+#   python3 -m venv vectordb_env
+#   source vectordb_env/bin/activate     # Windows: vectordb_env\Scripts\activate
+#   pip install -r requirements.txt
+#   jupyter notebook
+#
+# Keys the notebooks ask for: OPENAI_API_KEY (ChromaDB RAG, LlamaIndex, GraphRAG,
+# RAG security) and PINECONE_API_KEY (Pinecone modules, RAG security). Set them
+# as environment variables or paste them in when a notebook prompts.
+#
+# Module 4 (Graph_Databases) also needs a running Neo4j server. The notebooks
+# start one inside Colab; locally use Neo4j Desktop or Docker and point the
+# connection cell at it.
+#
+# The install is large (PyTorch, transformers): expect a few GB and a few minutes.
+#
+# Notebook 4 (Audio Similarity Search) downloads its audio model with wget the
+# first time panns_inference is imported. On macOS install wget first
+# (brew install wget) or simply run that notebook in Colab.
+
+# --- Vector databases ---
+chromadb==1.5.5
+pinecone==7.3.0
+
+# --- Local embedding models (CPU is fine for the course examples) ---
+sentence-transformers==5.3.0
+transformers==5.0.0
+torch==2.10.0
+
+# --- OpenAI SDK, pinned to the version the notebooks use ---
+openai==2.28.0
+tiktoken==0.12.0
+
+# --- LlamaIndex (modules 3 and 4) ---
+llama-index-core==0.14.20
+llama-index-embeddings-openai==0.6.0
+llama-index-llms-openai==0.7.5
+llama-index-readers-file==0.6.0
+llama-index-vector-stores-chroma==0.5.5
+llama-index-graph-stores-neo4j==0.7.0
+llama-cloud==2.2.0
+
+# --- Graph databases (module 4) ---
+neo4j==5.28.3
+networkx==3.4.2
+python-louvain==0.16
+
+# --- Audio similarity search (module 2, notebook 4) ---
+librosa==0.10.2
+soundfile==0.13.1
+datasets==3.2.0
+panns-inference==0.1.0
+
+# --- Data handling and plots ---
+# Ranges rather than exact pins on purpose: the Colab-matched versions
+# (pandas 2.2.2, matplotlib 3.10.0) have no wheels for Python 3.13/3.14.
+numpy>=2.0,<3
+pandas>=2.2,<3
+matplotlib>=3.10,<4
+
+# --- Local notebook runtime (Colab has this preinstalled) ---
+jupyter
+notebook
