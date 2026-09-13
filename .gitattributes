@@ -1,3 +1,3 @@
-*.ipynb filter=nbstripout
-*.zpln filter=nbstripout
+# Notebooks are committed WITH executed outputs on purpose (they read like an article and
+# Robert opens them live in class). No nbstripout filter here.
 *.ipynb diff=ipynb

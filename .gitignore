@@ -74,10 +74,16 @@ htmlcov/
 # Thumbnails
 ._*
 
-# MCP Server temporary data (if any)
+# Local databases created by the notebooks
 *.db
 *.sqlite
 *.sqlite3
+chroma_db/
+uploaded_db/
+neo4j/
+neo4j-community-*.tar.gz
+my_storage/
+chroma_database/
 
 # Interné natáčacie podklady (slidy + speaker notes) — len lokálne a na Drive, nikdy na GitHub
 recordings/

@@ -1,4 +1,4 @@
-# Vector Databases — one requirements file for the whole course (local setup).
+# Vector Databases: one requirements file for the whole course (local setup).
 #
 # Google Colab users do NOT need this: every notebook installs what it needs
 # in its first cell. For a local machine, run these once from the course
@@ -14,8 +14,9 @@
 # as environment variables or paste them in when a notebook prompts.
 #
 # Module 4 (Graph_Databases) also needs a running Neo4j server. The notebooks
-# start one inside Colab; locally use Neo4j Desktop or Docker and point the
-# connection cell at it.
+# start one inside Colab; locally run it in Docker before opening them:
+#   docker run -d --name neo4j -p 7474:7474 -p 7687:7687 \
+#     -e NEO4J_AUTH=neo4j/password123 neo4j:5.26-community
 #
 # The install is large (PyTorch, transformers): expect a few GB and a few minutes.
 #
@@ -32,14 +33,17 @@ sentence-transformers==5.3.0
 transformers==5.0.0
 torch==2.10.0
 
-# --- OpenAI SDK, pinned to the version the notebooks use ---
+# --- OpenAI SDK ---
+# Stays on the 2.x line on purpose: the LlamaIndex OpenAI integrations (module 3)
+# require openai<3. Every notebook uses the Responses API and the gpt-5.6-luna model,
+# which work the same on 2.28 and on 3.x.
 openai==2.28.0
 tiktoken==0.12.0
 
 # --- LlamaIndex (modules 3 and 4) ---
 llama-index-core==0.14.20
-llama-index-embeddings-openai==0.6.0
-llama-index-llms-openai==0.7.5
+llama-index-embeddings-openai==0.7.0
+llama-index-llms-openai==0.8.1
 llama-index-readers-file==0.6.0
 llama-index-vector-stores-chroma==0.5.5
 llama-index-graph-stores-neo4j==0.7.0
@@ -48,7 +52,7 @@ llama-cloud==2.2.0
 # --- Graph databases (module 4) ---
 neo4j==5.28.3
 networkx==3.4.2
-python-louvain==0.16
+pydantic>=2,<3
 
 # --- Audio similarity search (module 2, notebook 4) ---
 librosa==0.10.2
