@@ -2,67 +2,54 @@
 #
 # Google Colab users do NOT need this: every notebook installs what it needs
 # in its first cell. For a local machine, run these once from the course
-# folder (Python 3.10 or newer; tested on 3.12 and 3.14 in September 2026):
+# folder (Python 3.12 or newer; tested on 3.13 in November 2026):
 #
 #   python3 -m venv vectordb_env
 #   source vectordb_env/bin/activate     # Windows: vectordb_env\Scripts\activate
 #   pip install -r requirements.txt
 #   jupyter notebook
 #
-# Keys the notebooks ask for: OPENAI_API_KEY (ChromaDB RAG, LlamaIndex, GraphRAG,
-# RAG security) and PINECONE_API_KEY (Pinecone modules, RAG security). Set them
-# as environment variables or paste them in when a notebook prompts.
+# Keys the notebooks ask for:
+#   OPENAI_API_KEY       ChromaDB (RAG parts), LlamaIndex, GraphRAG, Securing RAG
+#   PINECONE_API_KEY     module 2 (the free plan is enough)
+#   LLAMA_CLOUD_API_KEY  module 3, optional (without it the notebook uses a parsed copy of the document)
+# Set them as environment variables or paste them in when a notebook prompts.
 #
 # Module 4 (Graph_Databases) also needs a running Neo4j server. The notebooks
 # start one inside Colab; locally run it in Docker before opening them:
 #   docker run -d --name neo4j -p 7474:7474 -p 7687:7687 \
 #     -e NEO4J_AUTH=neo4j/password123 neo4j:5.26-community
 #
-# The install is large (PyTorch, transformers): expect a few GB and a few minutes.
-#
-# Notebook 4 (Audio Similarity Search) downloads its audio model with wget the
-# first time panns_inference is imported. On macOS install wget first
-# (brew install wget) or simply run that notebook in Colab.
+# The install is large because of PyTorch, which only the optional local-model
+# section of the second ChromaDB notebook uses.
 
 # --- Vector databases ---
-chromadb==1.5.5
-pinecone==7.3.0
-
-# --- Local embedding models (CPU is fine for the course examples) ---
-sentence-transformers==5.3.0
-transformers==5.0.0
-torch==2.10.0
+chromadb==1.5.9
+pinecone==10.3.0
 
 # --- OpenAI SDK ---
-# Stays on the 2.x line on purpose: the LlamaIndex OpenAI integrations (module 3)
-# require openai<3. Every notebook uses the Responses API and the gpt-5.6-luna model,
-# which work the same on 2.28 and on 3.x.
-openai==2.28.0
-tiktoken==0.12.0
+openai==3.51.0
+tiktoken==0.14.0
 
-# --- LlamaIndex (modules 3 and 4) ---
-llama-index-core==0.14.20
-llama-index-embeddings-openai==0.7.0
-llama-index-llms-openai==0.8.1
-llama-index-readers-file==0.6.0
-llama-index-vector-stores-chroma==0.5.5
-llama-index-graph-stores-neo4j==0.7.0
-llama-cloud==2.2.0
+# --- LlamaIndex and LlamaParse (module 3) ---
+llama-index-core==0.14.26
+llama-index-llms-openai==0.9.0
+llama-index-embeddings-openai==0.8.0
+llama-index-readers-file==0.8.0
+llama-index-vector-stores-chroma==0.7.0
+llama-cloud==2.19.0
 
 # --- Graph databases (module 4) ---
-neo4j==5.28.3
-networkx==3.4.2
+neo4j==6.4.1
+networkx==3.7
 pydantic>=2,<3
 
-# --- Audio similarity search (module 2, notebook 4) ---
-librosa==0.10.2
-soundfile==0.13.1
-datasets==3.2.0
-panns-inference==0.1.0
+# --- Optional local model (module 1, notebook 2, section 6) ---
+transformers==5.23.0
+torch>=2.2
+accelerate
 
 # --- Data handling and plots ---
-# Ranges rather than exact pins on purpose: the Colab-matched versions
-# (pandas 2.2.2, matplotlib 3.10.0) have no wheels for Python 3.13/3.14.
 numpy>=2.0,<3
 pandas>=2.2,<3
 matplotlib>=3.10,<4
