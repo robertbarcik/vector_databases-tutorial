@@ -8,7 +8,7 @@ Default model in the notebooks that call OpenAI: `gpt-6-luna` (about 0.10 USD pe
 
 | # | Folder | Notebooks | What it covers | Needs |
 |---|--------|-----------|----------------|-------|
-| 1 | `1. ChromaDB` | [Embeddings and a real vector store](1.%20ChromaDB/1_Creating_Embeddings_using_Chroma.ipynb), [Semantic search and RAG](1.%20ChromaDB/2_Semantic_Search_and_RAG_with_ChromaDB.ipynb), [Chunking and overlap](1.%20ChromaDB/3_Chunking_and_Overlap_with_ChromaDB.ipynb) | Embedding functions, collections, metadata, `where` filters, `query()`, distances, a RAG pipeline with citations, an optional fully local variant; then chunking: the embedding model's token ceiling, a token-window splitter, chunk size and overlap tuned by experiment | OpenAI key (optional in nb 1 and 3) |
+| 1 | `1. ChromaDB` | [Embeddings and a real vector store](1.%20ChromaDB/1_Creating_Embeddings_using_Chroma.ipynb), [Semantic search and RAG](1.%20ChromaDB/2_Semantic_Search_and_RAG_with_ChromaDB.ipynb), [Chunking and overlap](1.%20ChromaDB/3_Chunking_and_Overlap_with_ChromaDB.ipynb) | Embedding functions, collections, how an index keeps the search fast (built by hand in fifteen lines), metadata, `where` filters, `query()`, distances, a RAG pipeline with citations, an optional fully local variant; then chunking: the embedding model's token ceiling, a token-window splitter, chunk size and overlap tuned by experiment | OpenAI key (optional in nb 1 and 3) |
 | 2 | `2. Pinecone` | [A managed vector database](2.%20Pinecone/1_Managed_Vector_Database_Pinecone.ipynb) | An index in the cloud with embedding done on the server, namespaces, filters, keyword search next to semantic search, hybrid search with reciprocal rank fusion, reranking | Pinecone key (free plan) |
 | 3 | `3. LlamaIndex` | [RAG in five lines, and document parsing](3.%20LlamaIndex/1_LlamaIndex_RAG_and_Document_Parsing.ipynb) | The RAG pipeline as a framework, nodes and source nodes, a table question that a plain PDF reader gets wrong, LlamaParse, the index stored in Chroma, metadata written by the model | OpenAI key; LlamaCloud key optional |
 | 4 | `4. Graph_Databases` | [Graph fundamentals with Neo4j](4.%20Graph_Databases/1_graph_fundamentals_neo4j.ipynb), [GraphRAG](4.%20Graph_Databases/2_graphrag_neo4j.ipynb) | Nodes, relationships, Cypher, loading a company graph; a language model extracts entities from text into Neo4j; one question answered by vectors, by the graph, and by both | OpenAI key (nb 2), Neo4j (started in Colab, Docker locally) |
@@ -23,7 +23,7 @@ All notebooks are committed **with executed outputs**, so they read like an arti
 
 | Chapter | Videos (= numbered sections) |
 |---|---|
-| 1 ChromaDB | 1.1 Embeddings and a collection · 1.2 Metadata and filters · 1.3 Search by meaning · 1.4 RAG on top of the store · 1.5 Chunking · 1.6 Chunk size and overlap |
+| 1 ChromaDB | 1.1 Embeddings and a collection · 1.2 How the search stays fast: the index · 1.3 Metadata and filters · 1.4 Search by meaning · 1.5 RAG on top of the store · 1.6 Chunking · 1.7 Chunk size and overlap |
 | 2 Pinecone | 2.1 A database as a service · 2.2 Meaning or keywords? Hybrid search · 2.3 Reranking · 2.4 Which database when |
 | 3 LlamaIndex | 3.1 RAG in five lines, and what is inside them · 3.2 Parsing sets the ceiling |
 | 4 Graph databases | 4.1 Graphs: nodes, relationships and Cypher · 4.2 A company graph · 4.3 GraphRAG: a language model builds the graph · 4.4 One question, three ways |

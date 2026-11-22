@@ -13,8 +13,11 @@ Same contract as `MCP-tutorial`. Robert films only what stays stable (concepts);
 technical parts are not filmed.
 
 - `## K.V Title` = exactly one video = lecture code `K_V` in the Skillmea tab "Vector Databases"
-  (22 lectures: 0_1, 0_2, 1_1 to 1_6, 2_1 to 2_4, 3_1, 3_2, 4_1 to 4_4, 5_1 to 5_3, 6_1).
-  Chapter K = module folder K; the six videos of chapter 1 run across its three notebooks.
+  (23 lectures: 0_1, 0_2, 1_1 to 1_7, 2_1 to 2_4, 3_1, 3_2, 4_1 to 4_4, 5_1 to 5_3, 6_1).
+  Chapter K = module folder K; the seven videos of chapter 1 run across its three notebooks.
+  1.2 "How the search stays fast: the index" was added on 2026-11-22 at Robert's request
+  (`add_index_section_2026_11_22.py`): pure numpy, no Chroma, the same walk as the slide in the
+  intro deck (26 steps, 126 comparisons of 2,000; the slide builder asserts these numbers).
 - `###` = sub-parts and rituals inside a video.
 - `## 🛠️ Developer corner: …` = no video, collapsed in Colab (`metadata.colab.collapsed_sections`
   lists the `metadata.id` of the corner heading cells). Tasks inside corners are `**🛠️ Stretch.**`.
